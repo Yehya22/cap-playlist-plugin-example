@@ -1,0 +1,20 @@
+{
+  "name": "capacitor-audio-example",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "sync": "npx cap sync",
+    "open:android": "npx cap open android",
+    "open:ios": "npx cap open ios",
+    "start:android": "pnpm run build && pnpm run sync && pnpm run open:android",
+    "start:ios": "pnpm run build && pnpm run sync && pnpm run open:ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.0",
+    "capacitor-plugin-playlist": "^0.4.0"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  }
+}
